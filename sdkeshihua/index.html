@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>高温之下，被“热倒”的他们</title>
+		<meta charset="utf-8">
+		<meta name="热射病" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="icon" href="assets/img/favicon.png" size="16*16" type="image/png"> 
+		<meta name="description" content="热射病；高温">
+
+		<!-- STYLES -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/flexslider.css">
+		<link rel="stylesheet" href="assets/css/animsition.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.css">
+
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+		<!-- 散点图动起来 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+		<link rel="stylesheet" href="./style.css">
+
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="https://public.flourish.studio/resources/embed.js"></script>
+		<script src="intersection-observer.js"></script>
+		<script src="stickyfill.min.js"></script>
+		<script src="scrollama.min.js"></script>
+		<script src="actions.js"></script>
+		<script src="https://code.jscharting.com/latest/jscharting.js"></script>
+		<style>
+			.rectangle:hover{
+			opacity:1;
+			}
+		</style>
+
+		<style>
+			@font-face {
+			font-family: 'webfontregular';
+			src: url('hanyixuefengtijian-1-webfont.woff2') format('woff2'),
+			url('hanyixuefengtijian-1-webfont.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+			}
+
+			#scrolly {
+			position: relative;
+			background-color: #ffffff;
+			padding: 0rem;
+			}
+
+			article {
+			position: relative;
+			padding: 0;
+			max-width: 65rem;
+			margin: 0 auto;
+			pointer-events: none;
+			}
+
+			figure {
+			position: -webkit-sticky;
+			position: sticky;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			margin-top: 30em;
+			margin-bottom: -10em;
+			margin-left: 40px;
+			margin-right: 40px;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			background-color: #ffffff;
+			}
+
+			figure p {
+			text-align: bottom;
+			padding: 1rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			font-size: 8rem;
+			font-weight: 900;
+			color: #fff;
+			}
+
+			.step {
+			margin: 0 auto 3rem auto;
+			color: #000000;
+			background-color: rgba(255, 255, 255, 0.85);
+			font-size: 17px;
+			line-height: 180%;
+			padding-top: 28px;
+			padding-bottom: 30px;
+			padding-left: 36px;
+			padding-right: 30px;
+			pointer-events: none;
+			box-shadow:0px 0px  8px 3px #bcbcbc;
+			}
+
+			.invisible {
+			visibility: hidden;
+			}
+
+			.step:last-child {
+			margin-bottom: 0;
+			}
+
+			.step.is-active {
+			background-color: rgba(255, 255, 255, 0.85);
+			color: #000000;
+			}   
+		</style>
+	</head>
+
+
+	<body class="animsition">
+		<div>
+			<!-- Border -->
+			<span class="frame-line top-frame visible-lg"></span>
+			<span class="frame-line right-frame visible-lg"></span>
+			<span class="frame-line bottom-frame visible-lg"></span>
+			<span class="frame-line left-frame visible-lg"></span>
+			<!-- HEADER  -->
+			<header class="main-header">
+				<div class="container-fluid" style="position: relative">		
+					<!-- box-intro -->
+					<section class="box-intro bg-film">
+						<div class="table-cell">
+							<h1 style="color: #FFFFFF;font-size:90px;margin-left: -30px;text-shadow: 8px 8px 12px #b0512c;letter-spacing:13px;" >蒸发的生命</h1>
+							<h1 style="color: #FFFFFF;font-size:60px;margin-left: -40px;margin-top: -5px; text-shadow: 8px 8px 12px #b0512c;letter-spacing:13px;">高温悲剧是否有迹可循</h1> 
+						</div>
+
+						<div class="mouse">
+							<div class="scroll"></div>
+						</div>
+					</section>
+					<!-- end box-intro -->
+				</div>
+			</header>
+
+			<!-- 直接放h5 -->
+			<section id="about" class="about mt-150 mb-50">
+				<!-- h5引入 -->
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								<p class="module-subtitle" style="text-align: center">
+									这是一个创下高温记录的夏天。</br>我们就像躺在黑夜里的露珠，</br>没能意识到黎明将至。</br>而现在，太阳出来了。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				</br></br></br></br></br></br>
+				<!-- h5链接 -->
+				<div>
+					<embed src="https://b.u.h5mc.com/c/_56b/y6nd/index.html" style="width: 90%;height: 700px;margin-left: 75px"/>
+				</div>
+
+				</br></br></br></br></br>
+				<!-- h5结束语 -->
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								<p class="module-subtitle">
+									</br></br>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp热射病是高温相关急症中最严重的情况，即重症中暑。<b  style="color: #e95423">若未及时治疗，死亡率可达80%。</b>
+								</p>
+								<p class="module-subtitle">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp根据发病原因和易感人群的不同，热射病可分为经典型热射病和劳力型热射病。其中，经典型热射病主要由高温高湿环境因素引起，通常没有剧烈的体力活动；而劳力型热射病主要由于高强度体力活动引起机体产热与散热失衡而发病。
+								</p>
+								<p class="module-subtitle">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b  style="color: #e95423">对高温环境适应不充分是导致热射病的主要原因。</b>值得注意的是，这里所指的高温环境并非单指夏季户外。事实上，在大气温度升高（>32℃）、湿度较大（>60%）和通风不良的环境中，以及进行长时间高强度劳动又无充分防暑降温措施时，缺乏对高热环境适应能力者都有极大可能发生热射病。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</br></br></br></br>
+			</section>
+
+			<!-- 01/02 -->
+			<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style="background-image: url(assets/img/service1.png);">
+				<div class="container">
+					<!-- 正文 -->
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="row center mb-100">
+							<div class="section-title-parralax">
+								</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+								<h2 style="color: #FFFFFF;font-size: 60px; margin-top: -230px;margin-bottom: 100px;margin-left: 10px;text-shadow: 8px 8px 12px #b0512c">01.无处不在的热射病</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+
+
+			<!-- 病例散点图 -->
+			<div class="container">
+				<main>
+					<section id="scrolly">
+						<figure style="height:0px; top: 0px;">
+							<iframe src='https://flo.uri.sh/story/1683482/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:90%;height:700px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+						</figure>
+
+						<div class='scrolly'>
+							<!-- sticky graphic -->
+							<figure class='sticky'>
+							<!-- chart stuff in here -->
+							</figure>
+							<!-- step text -->
+							<article>
+								<div class='step' data-step='0' style="display: table-cell;vertical-align: middle;">
+									2012年1月1日至2022年8月31日，我国媒体公开报道的热射病详细案例共
+									<span style="color: #000000; background-color: #fcdfc3;"><b>709例。</b></span>
+								</div>
+								<!-- ...more steps -->	
+
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step">
+									</br>其中
+									<span style="color: #000000; background-color: #fcdfc3; "><b>劳力型病例</b></span>440人，占比62%；
+									<span style="color: #000000; background-color: #fcdfc3; "><b>经典型病例</b></span>259人，占比36%。
+								</div>
+
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step" style="display: table-cell;vertical-align: middle;">
+									<span style="color: #000000; background-color: #fcdfc3;"><b>热射病患者的年龄跨度大，</b></span>
+									其中最小的患者只有19个月，而最大的患者已有101岁，41-60岁年龄段的人数最多，占比28.4%。
+								</div>
+
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step" style="display: table-cell;vertical-align: middle;">
+									春季患病案例28人，占比3%；夏季患病案例664人，占比93.6%；秋季患病案例5人，占比0.7%；冬季患病案例2人，占比0.2%。
+									<span style="color: #000000; background-color: #fcdfc3; "><b>夏季为热射病的高发季节，但同时不排除其他季节，甚至是冬季患病的可能性。</b></span>
+								</div>
+
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step" style="display: table-cell;vertical-align: middle;">
+									发病场所方面，超过一半/58.3%的患者是在户外发病，35.9%的患者在室内发病，
+									<span style="color: #000000; background-color: #fcdfc3; "><b> 具体发病地点较为多样。此外，在户外发病的热射病类型多为劳力型热射病，而在室内发病的热射病类型则无明显倾向。</b></span>
+								</div>
+
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step" style="display: table-cell;vertical-align: middle;">
+									<span style="color: #000000; background-color: #fcdfc3;" ><b> 在说明后续治疗结果的病患案例中，热射病患者的救治结果不容乐观。</b></span>
+									经治疗无效死亡的患者数达到两成，是完全康复出院患者数的两倍。此外，还有部分患者经治疗后仍留下后遗症，占总人数的1.1%。
+								</div>
+								<div class="step invisible">
+								</div>
+								<div class="step invisible">
+								</div>
+							</article>
+						</div> 
+					</section>
+
+
+					<!-- <div class='debug'></div> -->
+					<script src="http://1.changshi1104.applinzi.com/Scrollamahalo_files/d3.min.js.%E4%B8%8B%E8%BD%BD"></script>
+					<script src="http://1.changshi1104.applinzi.com/Scrollamahalo_files/intersection-observer.js.%E4%B8%8B%E8%BD%BD"></script>
+					<script src="http://1.changshi1104.applinzi.com/Scrollamahalo_files/stickyfill.min.js.%E4%B8%8B%E8%BD%BD"></script>
+					<script src="http://1.changshi1104.applinzi.com/Scrollamahalo_files/scrollama.min.js.%E4%B8%8B%E8%BD%BD"></script>
+					<script>
+						// using d3 for convenience
+						var main = d3.select("main");
+						var scrolly = main.select("#scrolly");
+						var figure = scrolly.select("figure");
+						var article = scrolly.select("article");
+						var step = article.selectAll(".step");
+
+
+						// initialize the scrollama
+						var scroller = scrollama();
+
+						// generic window resize listener event
+						function handleResize() {
+						// 1. update height of step elements
+						var stepH = Math.floor(window.innerHeight * 1);
+						step.style("height", 150 + "px");
+
+						var figureHeight = window.innerHeight ;
+						var figureMarginTop = (window.innerHeight - figureHeight) ;
+
+						figure
+						.style("height", figureHeight + "px")
+						.style("top", 0 + "px");
+
+						// 3. tell scrollama to update new element dimensions
+						scroller.resize();
+						}
+
+						// scrollama event handlers
+						function handleStepEnter(response) {
+						console.log(response);
+						// response = { element, direction, index }
+
+						// add color to current step only
+						step.classed("is-active", function(d, i) {
+						return i === response.index;
+						});
+
+						// update graphic based on step
+						figure.select("p").text(response.index + 1);
+
+
+						figure.select("iframe").attr("src", function (d) {
+						return (
+						"https://flo.uri.sh/story/1683482/embed#slide-" + response.index
+
+						);
+						})
+						}
+
+						function setupStickyfill() {
+						d3.selectAll(".sticky").each(function() {
+						Stickyfill.add(this);
+						});
+						}
+
+						function init() {
+						setupStickyfill();
+
+						// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+						handleResize();
+
+						// 2. setup the scroller passing options
+						// 		this will also initialize trigger observations
+						// 3. bind scrollama event handlers (this can be chained like below)
+						scroller
+						.setup({
+						step: "#scrolly article .step",
+						offset: 0.9,
+						debug: false
+						})
+						.onStepEnter(handleStepEnter);
+
+						// setup resize event
+						window.addEventListener("resize", handleResize);
+						}
+
+						// kick things off
+						init();
+					</script>
+
+					<!--Waves Container-->
+					<div>
+						<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+							<defs>
+								<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+							</defs>
+							<g class="parallax">
+								<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+								<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+								<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+								<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+							</g>
+						</svg>
+					</div>
+					<!--Waves end-->
+				</main>				
+			</div>
+
+			<!-- 01图和文字 -->
+			<div class="container" >	
+				<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="row center mb-100">
+						<div class="section-title-parralax">
+							<br/><br/><br/><br/>
+							<!-- 病例地图 -->
+							<div style="position:relative;position:absolute">
+								<iframe id="myframe" src="assets/kpl.html"  width="1504" height="700" style="border:0px solid;position: absolute;left: -350px;top: auto">   
+									<p>Your browser does not support iframes.</p>  
+								</iframe>
+							</div>
+							</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp从时间维度上看，我国近些年热射病高发的年份分别为2013年、2017年与2022年，恰好<b style="color: #e95423">对应1961年以来高温热浪综合强度最高的三个年份。</b>
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b style="color: #e95423">从空间分布来看，热射病病例遍布我国24个省份，多发于东南沿海一带。</b>浙江省是我国热射病高发大省，其近十年媒体公开报道的累计患者数是排名第二的江苏省的两倍。
+							</p>
+
+							
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp从19个月大的婴儿到20来岁的小伙，再到90多岁的老人；从温度适宜的春季到骄阳似火的夏季，再到寒风凛冽的冬季；从露天的工地到工作的厂房，再到温馨的家中；从日常居家到户外劳作，再到体育锻炼......
+							</p>
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp热射病似乎无处不在。
+							</p>
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp热射病从来都不是夏季的“专利”，也不是只有老年人需要预防的“老年病”，更不是户外暴晒才会被不幸砸中的“彩票”。<b  style="color: #e95423">在日常生活中，每个人都有患上热射病的风险。</b></p>
+							</br></br></br>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+
+			<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style="background-image: url(assets/img/service2.png);">
+				<div class="section-overlay"></div>
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+								<h2 style="color: #FFFFFF;font-size: 60px; margin-top: -50px;margin-bottom: 100px;margin-left: 10px;text-shadow: 8px 8px 12px #b0512c">02.被忽视的热风险</h2>
+								<h2 style="color: #FFFFFF;font-size:50px; margin-top: -40px;margin-bottom: 100px;margin-left: 10px;text-shadow: 8px 8px 12px #b0512c">“水煮过的脏器”</h2>
+								</br></br></br></br></br></br></br></br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			</br></br></br></br></br></br></br></br>
+			<div class="container" >	
+				<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="row center mb-100">
+						<div class="section-title-parralax">
+							<div class="container" style="position: relative">
+								<div class="flourish-embed flourish-parliament" data-src="visualisation/11216794" style="width:75%;position: absolute;left: -50px;top: 0px">
+									<script src="https://public.flourish.studio/resources/embed.js"></script>
+								</div>
+							</div>
+							</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+							
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 在上述病例发病原因中，高温天气作业是最主要的原因，占总数的37.5%；其次是高温天气户外活动，占总数的22%。
+							</p> 
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp虽然有近六成的热射病患者是因高温天气户外作业或活动致病，但仅仅通过减少户外作业与活动并不能降低患热射病的风险。
+							</p> 
+							<p class="module-subtitle" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp人们似乎还没意识到，<b style="color: #e95423">室内场所为我们遮阳的同时，通风不良和缺乏有效降温设备两大要素可以让遮阳屋悄然沦为“吃人”的蒸笼。</b>
+							</p>
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp据统计，近十年多共有87例热射病患者因工作场所高温作业而患病，占热射病患者总数的12%。他们大多在“只有风扇”的室内场所中作业，更有甚者一直处于“没有空调，没有风扇”的密闭环境之中。
+							</p>
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp除工作场所高温作业外，有近两成的患者因居家未防暑而患病，他们之中大部分是“未开空调和风扇”的老人。</p> 
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2013年7月5日，浙江省桐乡市第一人民医院在同一天接收了10例70岁以上的热射病患者，其病因都是居家未防暑。“在家里不舍得开空调和风扇”，室内高温加之自身抵抗力较弱，两者结合最终导致病情的发生。</p> 
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp相似的情况发生在今年7月14日的扬州市。下午时分，扬州市人民医院急诊部在5小时内收治了5例重度中暑患者，其中3例是热射病患者。据院方介绍，这些患者大多居家未开空调，有的舍不得电费开销，有的担心受凉，还有的因感冒而将自己闷在不通风的房间中。<b style="color: #e95423">最终，他们都倒在了自己制造的“蒸笼”中。</b></p>
+							<p class="module-subtitle" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp无论出于何种原因患上热射病，这些患者在此前都没有对高温致病产生警惕。
+							</p> 
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“不认为自己会得病”，多少热射病患者直至确诊前都没有意识到自己因高温环境患上热射病，即使有人意识到自己可能中暑，但由于对中暑的危害与急救方式所知甚少，最终延误了救治时机。
+							</p>
+							<p class="module-subtitle" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b style="color: #e95423">可见，“吃人”的不只高温，高温健康知识的贫乏也在蚕食着人们的健康。</b>
+							</p>
+							
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 即使人们常常将“热死人”挂在嘴边，但是比起高温致病，人们似乎更愿意去相信受凉更容易导致疾病的发生。可事实真的是如此吗？高温中暑的危害会比受凉感冒来得更小吗？
+							</p>
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp今年7月初，河南郑州一名男子因重症中暑突然呕吐昏迷。被送到医院抢救时，他身体的核心温度已达42.3℃，体内所有的脏器就像在水里“煮”过一样，出现了肝功能与肾功能损伤。
+							</p>
+
+							</br></br></br></br></br></br></br></br>
+
+							<!-- 水煮过的脏器 -->
+							<div class="container" style="position: relative">
+								<img src="assets/img/guo.png" style="width:23%; position: absolute;left:230px;top: -240px">
+							</div>
+
+							</br></br></br></br>
+
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b style="color: #e95423">拥有“水煮过的脏器”的人在热射病患者中不在少数。</b>据统计，在近十年多的热射病病例中，共有618例提及患者症状，其中患者最多发的症状就是“水煮过的脏器”——多器官衰竭，共有205位患者出现该症状，占总患者数的三分之一。
+							</p>
+							<p class="module-subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp除多器官衰竭外，热射病患者往往还伴随着昏迷、头晕、高热以及抽搐等症状。
+							</p>
+						</div>
+					</div>
+				</div>；
+			</div>
+
+			<!-- 词云、症状图 -->
+			<div class="container" style="position: relative">
+				<div class="flourish-embed flourish-hierarchy" data-src="visualisation/11169588" style="width:50%;position: absolute;left: -80px;top: -20px">
+					<script src="https://public.flourish.studio/resources/embed.js"></script>
+				</div>
+
+				<img src="assets/img/zhengzhuang.png" style="width: 65%; position: absolute;left:519px;top: -80px">
+			</div>
+
+			</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+			<div class="bottom-separator hidden-xs"></div>
+			
+
+			<!-- 03  -->
+			<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style="background-image: url(assets/img/service3.png);">
+				<div class="section-overlay"></div>
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+								<h2 style="color: #FFFFFF;font-size: 60px; margin-top: -50px;margin-bottom: 100px;margin-left: 10px;text-shadow: 8px 8px 12px #b0512c">03.被压低的高温预报？</h2>
+								<h2 style="color: #FFFFFF;font-size:50px; margin-top: -40px;margin-bottom: 100px;margin-left: 10px;;text-shadow: 8px 8px 12px #b0512c">“缺乏针对性的高温预警机制”</h2>
+								</br></br></br></br></br></br></br></br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			</br></br></br></br></br></br></br></br>
+			<div class="container">
+				<div class="row center">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="section-title-parralax">
+							<p class="module-subtitle" style="color: #e95423">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b style="color: #e95423">“再健康强壮的人，都可能因为高温导致的身体调节功能失衡而瞬间倒下。”</b>
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp热射病患者往往病情发展迅猛，危重症热射病患者的最佳抢救时间很短。因此，面对来势汹汹的热射病，除了掌握高温健康知识，加强事前预测也至关重要。中国气象服务协会会长、中国气象局原副局长许小峰认为：“加强事前预测，采取有效的应对措施，应是减少灾害影响的重要环节。”
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp与普罗大众相比，气象局无疑是最早获取到高温信息的，其发布的高温预报与预警信息更是对大众生产生活有着警醒作用。
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp今年入夏以来，武汉的小王出门前都会关注天气预报，尽量避免在40℃高温时外出活动，但她发现即使在天气预报37℃左右时出门依旧热得不行。
+							</p>
+							<p class="module-subtitle" >
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b style="color: #e95423">“预报的温度准确吗？”</b>小王心里不免质疑。
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp不只是小王，许多人都有着类似的疑问：为什么感觉实际温度比预报温度更高呢？气象部门是否有意压低预报温度呢？
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 弹幕图 -->
+			<div class="container" style="position: relative">
+				<img src="assets/img/danmu.gif" style="width: 100%; position: absolute;left:-5px;top: -10px">
+			</div>
+			</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+			</br></br></br></br></br></br>
+			<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style="background-image: url(assets/img/baiyexiang.png);background-size:contain;backgroung-position:center;background-repeat: no-repeat">
+				
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								<p class="module-subtitle">
+									</br></br></br></br></br></br></br></br></br></br></br>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b style="color: #e95423">“压低温度预报的情况是不存在的，这可能与实际体感温度有关。”</b>许小峰解释道。</p>
+								<p class="module-subtitle">
+									</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp按照世界气象组织（WMO）的现行统一规定，目前气象部门发布的气温，指在野外空气流通、不受太阳直射下测得的空气温度，以观测站百叶箱里的空气温度为准。而对于气象站的建设，国家有严格的建设标准：下垫面有一定面积的浅草平铺，温度计置于百叶箱内，避免太阳直射并保持通风，且百叶箱离地1.5米。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="container">
+				<div class="row center">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="section-title-parralax">
+							<p class="module-subtitle" >
+								</br></br></br></br>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp不同于百叶箱测得的空气温度，体感温度是受多种要素综合作用的结果，主要取决于气温、风速与相对湿度。
+								</br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</br></br>
+			<!-- 体感温度图/热力图 -->	
+			<div class="container" style="position: relative">
+				<img src="assets/img/relitu.png" style="width: 50%; position: absolute;left:280px;top: 0px">
+			</div>
+			</br></br></br></br></br></br></br></br></br></br></br></br>
+
+			<div class="container">
+				<div class="row center">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="section-title-parralax">
+							<p class="module-subtitle">
+								</br></br></br></br>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp以湿度为例，同样的气温下，空气湿度高会让人更难忍受。<b style="color: #e95423">这就好比蒸桑拿，蒸干桑拿的人能够承受的温度极限比蒸湿桑拿的人高。</b>
+							</p>
+							<p class="module-subtitle" >
+    							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp除气象因素外，体感温度还受到个人因素的影响。具体表现在：较胖的人因为脂肪的保温效果，总是会比较瘦的人感觉更热；在室外穿黑色衣服的人会比穿浅色衣服的人吸收更多的热量；甚至有的人会因为心情愉悦而提高对炎热天气的容忍度。
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp总的来说，体感温度相较于空气温度会更加贴合人们的实际感受，在夏天往往表现为人们感觉实际温度比预报温度高。
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b style="color: #e95423">既然如此，为什么天气预报不采用体感温度？</b>
+							</p>
+							<p class="module-subtitle" >
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp对此，深圳市气象局工作人员在采访中解释道，“气温不仅影响人体舒适度与健康，还影响农业、交通、工业、供电供水等各行各业，因此需要统一的标准。”
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp当然，考虑到风速、湿度等气象因素对人的影响，<b style="color: #e95423">气象台也会发布一些生活气象来弥补气温的不足。</b>据中国气象报社回应，目前部分气象部门已经开展了体感温度、穿衣指数等生活气象服务业务，由于电视天气预报节目时长和版面限制，这些生活类预报服务产品暂时还不具备播报条件，但中国天气APP、中国天气网上均有相关产品。
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp此外，深圳市气象局工作人员还指出，当前部分气象部门的体感温度预报模型是根据各种经验公式和热平衡建立的，具有一定的参考意义，但不同的人在不同地区不同温度范围内对湿度的适应特征还需进一步验证。
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp同样采用单一气温标准的还有我国目前普遍实行的高温预警机制——高温三色预警。深圳市气象局工作人员表示，高温天气在增加人体健康风险的同时，也会增加汽车爆胎、自燃、森林火灾等事故发生的概率，因此发布高温预警时不能只考虑体感温度，而应采取更具有普遍意义的气象温度。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 高温预警的信号/三色图标 -->
+			</br></br></br></br>
+			<div class="container" style="position: relative">
+				<img src="assets/img/xinhao.png" style="width: 80%; position: absolute;left:150px;top: -150px">
+			</div>
+			</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+			<div class="container">
+				<div class="row center">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="section-title-parralax">
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b style="color: #e95423">可是仅以气温作为高温天气的阈值，对预警高温健康风险不免缺乏针对性。</b>一项针对高温热浪对人体健康影响的研究称，高温热浪是一个连续天气过程，其对人体健康的影响具有滞后性。因此要想通过高温三色预警机制准确地预警极端天气的健康风险难免存在困难。
+							</p>
+							<p class="module-subtitle">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp难道真的办法通过高温预警系统提前预警极端天气的健康风险吗？
+							</p>
+							<p class="module-subtitle" >
+    							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp虽然我国目前的高温预警系统多只针对气象，但是在过去的20年间，我国一直在尝试建立更具针对性的“高温与健康风险预警”系统。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</br></br>
+			<!-- 时间线 -->	
+			<div class="container" style="position: relative">
+				<img src="assets/img/time.png" style="width: 75%; position: absolute;left:150px;top: 0px">
+			</div>
+			</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+			<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								<p class="module-subtitle">
+									</br></br></br></br>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“总体上，国内的高温热浪健康风险预警系统起步相对较晚，模型尚待开发和优化。”在清华大学万科公共卫生与健康学院教授黄存瑞看来，部分城市的试点是日后开展全人群、多病种、全区域高温热浪与健康风险预警系统的基础。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+		</div>
+			</br></br></br></br>
+			<!-- 第四部分：结尾 -->
+			<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style="background-image: url(assets/img/service4.png);">
+				<div class="section-overlay"></div>
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+								<h2 style="color: #FFFFFF;font-size: 60px; margin-top: -50px;margin-bottom: 100px;margin-left: 10px;text-shadow: 8px 8px 12px #b0512c">04.结语</h2>
+								</br></br></br></br></br></br></br></br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+				
+				</br></br></br></br>
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<div class="section-title-parralax">
+								<p class="module-subtitle">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp据中国气象局气候变化中心发布的《中国气候变化蓝皮书（2022）》显示，全球变暖趋势仍在持续，而中国作为全球气候变化的敏感区，其未来高温极端天气气候事件仍将趋多、趋强。
+								</p>
+
+								<!-- 高温天气折线图 -->
+								</br></br>
+								<div>
+									<div class="flourish-embed flourish-chart" data-src="visualisation/11179952">
+										<script src="https://public.flourish.studio/resources/embed.js"></script>
+									</div>
+								</div>
+								</br></br></br></br>
+
+								<p class="module-subtitle">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp可无论是冰川融化的北极，还是厄尔尼诺的概念，亦或是“2100年全球平均气温将超过人类适应极限”的预测，“气候变化”似乎离我们太过遥远。
+								</p>
+								<p class="module-subtitle">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp此前中国气象局国家气候中心发布的数据显示，今年我国高温热浪事件的综合强度已达1961年有完整气象记录以来最强。当“破纪录”与“超极值”等高温信息轮番刷屏，当气温变化不再是抽象的概念，而具化为全国“热倒”的136例患者，具化为重庆爆发的10余起山火，具化为四川长达10天的高温限电......人们似乎才意识到，原来“气候变化”真的近在咫尺。
+								</p>
+								<p class="module-subtitle">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp但这些数字也只不过是高温危害的冰山一角。《联合国气候变化框架公约》第九次缔约方大会的世界卫生组织官员指出，每年仅因气候变暖而死亡的人数就超过10万人，如果这一情况不能得到改善，预计到2030年，全世界每年将有30万人死于气候变暖。一项由中国疾控中心、北京大学等单位的学者于2022年3月发表的研究结果显示：2017年中国共有16299人因异常热浪而发生全因死亡，据估计，死亡相关经济损失总额为613.04亿元。
+								</p>
+								<p class="module-subtitle">
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp当不断攀升的高温热浪一次次击穿我们的高温知识经验，当级联反应的高温灾害一次次冲击我们的高温应对机制，如何协同全社会的力量建立更有效的高温应对机制，织就⼀张更加密实、更具韧性的保护网，已成为一个亟待解决的问题。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			
+			</br></br></br></br></br></br>
+			<!-- 参考文献&指导老师&小组成员 -->
+			<section id="services" class="services mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background"  style="background-color: #fcdfc3;height: 1350px">
+				<div class="section-overlay"></div>
+				<div class="container" style="position: relative">
+					<div class="col-md-6 col-sm-12" style="position: absolute;left: 300px;top: 0px">
+						<div class="row" style="text-align: center">
+							</br></br></br></br>
+							
+							<p class="libre-text mt-50">
+								<h4>参考资料:</h4> 
+								</br>
+								《中国热射病诊断与治疗专家共识 2019》</br>
+								《中暑如何危害人体七大器官》
+								</br>
+								《人的体温如果不断升高，烧到多少度会死？》
+								</br>
+								《高温凶猛，预警如何更“响”》
+								</br>
+								《天气预报中能否加上体感温度、穿衣指数标识》
+								</br>
+								《预报温度≠体感温度 专家呼吁注意防暑降温》
+								</br>
+								《中国气候变化蓝皮书（2022）》
+								</br>
+								《风速与体感温度对照表》
+								</br></br></br>
+								
+								<h4>数据来源:</h4>
+								</br>
+								慧科新闻</br>中国气象网</br>深圳卫健委</br>DATA.GeoAtlas</br>美国国家环境信息中心(NCEI)</br>中国地面气候资料日值数据集V3.0处理生成
+								</br></br>
+
+								<b>（本文使用的病例信息均由作者人工阅读分析，如有错误，欢迎指正）</b></br></br></br>
+
+
+								<h4>素材参考:</h4></br>https://www.freepik.com/</br></br>
+							</p>
+						</div>
+						<div class="row" style="text-align: center">
+							<p class="libre-text mt-50">
+								<b style="18px">指导老师</b>：黄文森、陈显玲
+							</p>
+							<p>
+								<b style="18px">小组成员：</b>郭洁婷、胡珊珊、陈宇涵、郭珊珊、黄昕婕</br>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+		<script type="text/javascript" src="assets/js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="assets/js/animated-headline.js"></script>
+		<script type="text/javascript" src="assets/js/menu.js"></script>
+		<script type="text/javascript" src="assets/js/modernizr.js"></script>
+		<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
+		<script type="text/javascript" src="assets/js/init.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+		<script type="text/javascript" src="assets/js/numscroller.js"></script>
+		<script type="text/javascript" src="assets/js/wow.min.js"></script>
+		<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+		<script type="text/javascript">
+			$(window).load(function() {
+			new WOW().init();
+
+			// initialise flexslider
+			$('.flexslider').flexslider({
+			animation: "fade",
+			directionNav: true,
+			controlNav: false,
+			keyboardNav: true,
+			slideToStart: 0,
+			animationLoop: true,
+			pauseOnHover: false,
+			slideshowSpeed: 4000,
+			});
+
+			smoothScroll.init();
+
+			// initialize isotope
+			var $container = $('.portfolio_container');
+			$container.isotope({
+			filter: '*',
+			});
+
+			$('.portfolio_filter a').click(function(){
+			$('.portfolio_filter .active').removeClass('active');
+			$(this).addClass('active');
+
+			var selector = $(this).attr('data-filter');
+			$container.isotope({
+			filter: selector,
+			animationOptions: {
+			duration: 500,
+			animationEngine : "jquery"
+			}
+			});
+			return false;
+			});
+			});
+		</script>
+
+		<!-- 散点图动起来 -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/noframework.waypoints.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.1/jquery.scrollTo.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js'></script>
+		<script  src="./script.js"></script>
+	</body>
+</html>
